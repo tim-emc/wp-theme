@@ -66,6 +66,7 @@ function wp_theme_customize( $wp_customize ) {
 			'choices'  => array(
 				'navbar-light bg-light'  => __( 'Default', 'wp-theme' ),
 				'navbar-dark bg-dark'    => __( 'Dark', 'wp-theme' ),
+				'navbar-light'    => __( 'Light', 'wp-theme' ),
 				'navbar-dark bg-primary' => __( 'Primary', 'wp-theme' ),
 			),
 			'settings' => 'navbar_scheme',
