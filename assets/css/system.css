@@ -1,0 +1,10 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+body nav .navbar-brand img {
+  width: 187px;
+  height: 56px;
+}
+body nav .navbar-nav a {
+  /*font-size: 1rem;*/
+}

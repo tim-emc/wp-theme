@@ -1,0 +1,104 @@
+/*
+ * Author:	eMedia Campaigns 
+ * Created:	20/11/2019
+ *
+ * Customised 'Re-skin of venuenet site'
+ */
+
+// nav
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+// small text within heading one on members area home page
+h1,
+h2,
+h3 {
+    font-weight: 200;
+
+    small {
+        display: block;
+        font-size: smaller;
+
+        span {
+            font-size: 80%;
+
+            &:before {
+                content: '(';
+                display: inline-block;
+            }
+
+            &:after {
+                content: ')';
+                display: inline-block;
+            }
+        }
+    }
+}
+
+h4,
+legend {
+    font-weight: 300;
+}
+
+// custom sticky
+.sticky-custom {
+    top: 97px;
+    padding-bottom: 20px;
+    z-index: 0;
+}
+
+// sub nav
+.sub_nav,
+.event-list {
+    a {
+        text-decoration: none;
+    }
+}
+
+// footer
+footer {
+    a {
+        text-decoration: none;
+
+        &:after {
+            content: ' / ';
+            color: black;
+            display: none;
+        }
+    }
+}
+
+// overrides
+div[id$="divContentColumnOne"] {
+    padding-bottom: 0;
+}
+
+// image
+.image {
+    line-height: 0;
+}
+
+// video
+[id*="GalleryMobile"] {
+    video {
+        height: 100%;
+        object-fit: fill;
+        width: auto;
+        margin-left: -50%;
+    }
+}
+
+// home video
+.home {
+    video {
+        max-height: 80vh;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+// edit link
+.edit-link {
+    display: none;
+}

@@ -13,10 +13,10 @@
 				endif;
 			?>
 		</main><!-- /#main -->
-		<footer id="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
+		<footer id="footer" class="footer mt-auto py-3 text-light">
+			<div class="container pt-3">
+				<div class="row mb-4 mt-3">
+					<div class="col-md-6 d-none">
 						<p><?php printf( esc_html__( '&copy; %1$s %2$s. All rights reserved.', 'wp-theme' ), date_i18n( 'Y' ), get_bloginfo( 'name', 'display' ) ); ?></p>
 					</div>
 
@@ -42,7 +42,7 @@
 
 						if ( is_active_sidebar( 'third_widget_area' ) ) :
 					?>
-						<div class="col-md-12">
+
 							<?php
 								dynamic_sidebar( 'third_widget_area' );
 
@@ -52,9 +52,26 @@
 							<?php
 								endif;
 							?>
-						</div>
+
 					<?php
 						endif;
+						
+						if ( is_active_sidebar( 'fourth_widget_area' ) ) :
+					?>
+
+							<?php
+								dynamic_sidebar( 'fourth_widget_area' );
+
+								if ( current_user_can( 'manage_options' ) ) :
+							?>
+								<span class="edit-link"><a href="<?php echo esc_url( admin_url( 'widgets.php' ) ); ?>" class="badge badge-secondary"><?php esc_html_e( 'Edit', 'emc-wp' ); ?></a></span><!-- Show Edit Widget link -->
+							<?php
+								endif;
+							?>
+
+					<?php
+						endif;						
+						
 					?>
 				</div><!-- /.row -->
 			</div><!-- /.container -->
