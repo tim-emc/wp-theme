@@ -25,20 +25,20 @@ $page_id = get_option( 'page_for_posts' );
 </div><!-- /.row -->
 <!-- broadcast desktop -->
 <?php
-	if ( is_active_sidebar( 'seventh_widget_area' ) ) :
+	if ( is_active_sidebar( 'home_video' ) ) :
 ?>
 	<?php
-		dynamic_sidebar( 'seventh_widget_area' );
+		dynamic_sidebar( 'home_video' );
 	?>
 <?php
 	endif;						
 ?>
 <!-- section 1 -->
 <?php
-	if ( is_active_sidebar( 'fifth_widget_area' ) ) :
+	if ( is_active_sidebar( 'home_section_1' ) ) :
 ?>
 	<?php
-		dynamic_sidebar( 'fifth_widget_area' );
+		dynamic_sidebar( 'home_section_1' );
 	?>
 <?php
 	endif;						
@@ -47,10 +47,10 @@ $page_id = get_option( 'page_for_posts' );
 <div class="services container-fluid lazyload">
 	<div class="container">
 		<?php
-			if ( is_active_sidebar( 'sixth_widget_area' ) ) :
+			if ( is_active_sidebar( 'home_section_2' ) ) :
 		?>
 			<?php
-				dynamic_sidebar( 'sixth_widget_area' );
+				dynamic_sidebar( 'home_section_2' );
 			?>
 		<?php
 			endif;						

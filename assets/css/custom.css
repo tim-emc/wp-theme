@@ -57,6 +57,10 @@ footer a:after {
   color: black;
   display: none;
 }
+footer img {
+  width: 75%;
+  margin: 0 auto;
+}
 div[id$="divContentColumnOne"] {
   padding-bottom: 0;
 }

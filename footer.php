@@ -40,11 +40,11 @@
 							);
 						endif;
 
-						if ( is_active_sidebar( 'third_widget_area' ) ) :
+						if ( is_active_sidebar( 'footer_left' ) ) :
 					?>
 
 							<?php
-								dynamic_sidebar( 'third_widget_area' );
+								dynamic_sidebar( 'footer_left' );
 
 								if ( current_user_can( 'manage_options' ) ) :
 							?>
@@ -56,11 +56,11 @@
 					<?php
 						endif;
 						
-						if ( is_active_sidebar( 'fourth_widget_area' ) ) :
+						if ( is_active_sidebar( 'footer_right' ) ) :
 					?>
 
 							<?php
-								dynamic_sidebar( 'fourth_widget_area' );
+								dynamic_sidebar( 'footer_right' );
 
 								if ( current_user_can( 'manage_options' ) ) :
 							?>

@@ -240,11 +240,11 @@ function wp_theme_widgets_init() {
 		)
 	);
 
-	// Area 3.
+	// Footer Left
 	register_sidebar(
 		array(
-			'name'          => 'Third Widget Area (Footer)',
-			'id'            => 'third_widget_area',
+			'name'          => 'Left (Footer)',
+			'id'            => 'footer_left',
 			'before_widget' => '<div class="offset-md-3 col-md-3 text-center mb-3 mb-md-0">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h3 class="widget-title">',
@@ -252,11 +252,11 @@ function wp_theme_widgets_init() {
 		)
 	);
 
-    // Area 4.
+    // Footer Right
 	register_sidebar(
 		array(
-			'name'          => 'Fourth Widget Area (Footer)',
-			'id'            => 'fourth_widget_area',
+			'name'          => 'Right (Footer)',
+			'id'            => 'footer_right',
 			'before_widget' => '<div class="col-md-4 text-center">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h3 class="widget-title">',
@@ -264,11 +264,11 @@ function wp_theme_widgets_init() {
 		)
 	);
 	
-	// Area 5.
+	// Section 1 (Home)
 	register_sidebar(
 		array(
 			'name'          => 'Section 1 (Home)',
-			'id'            => 'fifth_widget_area',
+			'id'            => 'home_section_1',
 			'before_widget' => '<div class="shadow-lg intro lazyload"><main class="container"><div class="section py-5 px-3"><div class="text-center"><h3 class="font-weight-light wow animate__animated animate__fadeInUp" data-wow-offset="100">',
 			'after_widget'  => '</h3></div></div></main></div>',
 			'before_title'  => '<h3 class="widget-title">',
@@ -276,11 +276,11 @@ function wp_theme_widgets_init() {
 		)
 	);
 
-	// Area 6.
+	// Section 2 (Home)
 	register_sidebar(
 		array(
 			'name'          => 'Section 2 (Home)',
-			'id'            => 'sixth_widget_area',
+			'id'            => 'home_section_2',
 			'before_widget' => '<div class="row"><div class="col-12 col-md-10 offset-md-1"><div class="text-center pt-5 px-3"><div><div class="font-weight-light wow animate__animated animate__fadeInUp text-white" data-wow-offset="100">',
 			'after_widget'  => '</div></div></div></div></div>',
 			'before_title'  => '<h3 class="widget-title">',
@@ -291,20 +291,8 @@ function wp_theme_widgets_init() {
 	// Area 7.
 	register_sidebar(
 		array(
-			'name'          => 'Broadcast Desktop (Home)',
-			'id'            => 'seventh_widget_area',
-			'before_widget' => '',
-			'after_widget'  => '',
-			'before_title'  => '<h3 class="widget-title">',
-			'after_title'   => '</h3>',
-		)
-	);
-
-	// Area 8.
-	register_sidebar(
-		array(
-			'name'          => 'Broadcast Mobile (Home)',
-			'id'            => 'eighth_widget_area',
+			'name'          => 'Video (Home)',
+			'id'            => 'home_video',
 			'before_widget' => '',
 			'after_widget'  => '',
 			'before_title'  => '<h3 class="widget-title">',
